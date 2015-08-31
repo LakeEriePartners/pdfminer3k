@@ -620,7 +620,7 @@ class LTLayoutContainer(LTContainer):
         if len(boxes) > 100:
             # Grouping this many boxes would take too long and it doesn't make much sense to do so
             # considering the type of grouping (nesting 2-sized subgroups) that is done here.
-            logging.warning("Too many boxes (%d) to group, skipping.", len(boxes))
+            #logging.warning("Too many boxes (%d) to group, skipping.", len(boxes))
             return boxes
         # XXX this still takes O(n^2)  :(
         dists = []
