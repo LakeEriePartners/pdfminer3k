@@ -219,10 +219,8 @@ class PSStackParser(PSBaseParser):
         self.context.append((pos, self.curtype, self.curstack))
         (self.curtype, self.curstack) = (type, [])
         # logging.debug('start_type: pos=%r, type=%r', pos, type)
-    
+
     def end_type(self, type):
-        if self.curtype != type:
-            raise PSTypeError('Type mismatch: %r != %r' % (self.curtype, type))
         objs = [ obj for (_,obj) in self.curstack ]
         (pos, self.curtype, self.curstack) = self.context.pop()
         # logging.debug('end_type: pos=%r, type=%r, objs=%r', pos, type, objs)
