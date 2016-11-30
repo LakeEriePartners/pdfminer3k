@@ -329,8 +329,8 @@ class PDFDocument:
         parser = self._parser
         parser.setpos(0)
         parser.reset()
-        self._parse_whole(parser)
         self._parsed_everything = True
+        self._parse_whole(parser)
     
     def _getobj(self, objid):
         if not self.xrefs:
