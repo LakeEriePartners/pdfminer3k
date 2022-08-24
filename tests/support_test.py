@@ -2,7 +2,7 @@
 
 from pytest import raises
 
-from pdfminer import arcfour, ascii85, lzw, rijndael, runlength, utils
+from pdfminer3k import arcfour, ascii85, lzw, rijndael, runlength, utils
 from .util import eq_
 
 def test_arcfour():

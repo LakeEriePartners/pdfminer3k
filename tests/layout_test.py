@@ -1,6 +1,6 @@
 import os.path as op
 
-from pdfminer.layout import *
+from pdfminer3k.layout import *
 from .util import eq_, TestData, pages_from_pdf, extract_textboxes
 
 testdata = TestData(op.join(op.dirname(__file__), '..', 'samples', 'layout'))

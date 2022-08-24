@@ -1,6 +1,6 @@
 import io
 
-from pdfminer.psparser import PSBaseParser, PSStackParser, KWD, LIT, PSEOF
+from pdfminer3k.psparser import PSBaseParser, PSStackParser, KWD, LIT, PSEOF
 from .util import eq_
 
 TESTDATA = br'''%!PS

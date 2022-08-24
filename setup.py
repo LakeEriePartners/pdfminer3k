@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from setuptools import setup
-from pdfminer import __version__
+from pdfminer3k import __version__
 
 DESC = """pdfminer3k is a Python 3 port of pdfminer.
 PDFMiner is a tool for extracting information from PDF documents.
@@ -30,11 +30,11 @@ setup(
         'ply>=3.4',
     ],
     packages=[
-    'pdfminer',
-    'pdfminer.cmap',
+    'pdfminer3k',
+    'pdfminer3k.cmap',
     ],
     package_data={
-    'pdfminer.cmap': ['*.pickle.gz'],
+    'pdfminer3k.cmap': ['*.pickle.gz'],
     },
     scripts=[
     'tools/pdf2txt.py',

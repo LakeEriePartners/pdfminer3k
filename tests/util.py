@@ -1,9 +1,9 @@
 import py.path
 
-from pdfminer.pdfparser import PDFParser, PDFDocument
-from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.layout import LAParams, LTTextBox
-from pdfminer.converter import PDFPageAggregator
+from pdfminer3k.pdfparser import PDFParser, PDFDocument
+from pdfminer3k.pdfinterp import PDFResourceManager, PDFPageInterpreter
+from pdfminer3k.layout import LAParams, LTTextBox
+from pdfminer3k.converter import PDFPageAggregator
 
 def eq_(a, b, msg=None):
     __tracebackhide__ = True

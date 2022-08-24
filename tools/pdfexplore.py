@@ -1,9 +1,9 @@
 import cmd, sys
 from argparse import ArgumentParser
 
-from pdfminer.pdftypes import PDFObjRef
-from pdfminer.psparser import PSEOF
-from pdfminer.pdfparser import PDFDocument, PDFParser
+from pdfminer3k.pdftypes import PDFObjRef
+from pdfminer3k.psparser import PSEOF
+from pdfminer3k.pdfparser import PDFDocument, PDFParser
 
 class bcolors:
     HEADER = '\033[95m'

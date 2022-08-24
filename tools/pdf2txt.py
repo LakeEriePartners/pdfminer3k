@@ -3,11 +3,11 @@ import sys
 import io
 import getopt
 
-from pdfminer.pdfinterp import PDFResourceManager, process_pdf
-from pdfminer.pdfdevice import TagExtractor
-from pdfminer.converter import XMLConverter, HTMLConverter, TextConverter
-from pdfminer.layout import LAParams
-from pdfminer.utils import set_debug_logging
+from pdfminer3k.pdfinterp import PDFResourceManager, process_pdf
+from pdfminer3k.pdfdevice import TagExtractor
+from pdfminer3k.converter import XMLConverter, HTMLConverter, TextConverter
+from pdfminer3k.layout import LAParams
+from pdfminer3k.utils import set_debug_logging
 
 def main(argv):
     def usage():
